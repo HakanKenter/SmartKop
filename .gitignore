@@ -2,7 +2,7 @@
 /node_modules
 
 # Configuration environment
-/backend/config/config.env
+backend/config/config.env
 
 # Debugger
 /.vscode
