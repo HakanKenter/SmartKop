@@ -45,7 +45,7 @@ const Cart = () => {
             <MetaData title="Votre panier" />
             {cartItems.length === 0 ? <h2 className="mt-5 mb-5 text-center f-24">Votre panier est vide</h2> : (
                 <Fragment>
-                    <h2 className="mt-5 f-24">Votre panier: <b>{cartItems.length} produits</b></h2>
+                    <h2 className="mt-5 f-24">Votre panier: <b>{cartItems.length} produit(s)</b></h2>
         
                     <div className="row d-flex justify-content-between cart-block">
                         <div className="col-12 col-lg-8 allcart-items">

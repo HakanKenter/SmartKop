@@ -26,7 +26,7 @@ const UpdateProduct = () => {
     const categories = [
         "electronique",
         "Appareils photo",
-        "Caméra",
+        "Camera",
         "Ordinateur portable",
         "Accessoires",
         "Casques",

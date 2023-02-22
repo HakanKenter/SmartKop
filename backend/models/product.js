@@ -40,7 +40,7 @@ const productsSchema = new mongoose.Schema({
             values: [
                 "Electronique",
                 "Appareils photo",
-                "Caméra",
+                "Camera",
                 "Ordinateur portable",
                 "Accessoires",
                 "Casques",

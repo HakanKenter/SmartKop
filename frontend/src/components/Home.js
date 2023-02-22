@@ -27,7 +27,7 @@ const Home = () => {
         "Générale",
         "Electronique",
         "Appareils photo",
-        "Caméra",
+        "Camera",
         "Ordinateur portable",
         "Accessoires",
         "Casques",
