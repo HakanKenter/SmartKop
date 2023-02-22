@@ -4,8 +4,6 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import { useDispatch, useSelector } from 'react-redux'
 import { useAlert } from 'react-alert'
 import { Link, useLocation } from 'react-router-dom'
-// import '../../App.css'
-// import '../../../public/assets/css/ui.css'
 
 import Search from './Search'
 

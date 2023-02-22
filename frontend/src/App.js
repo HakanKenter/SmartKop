@@ -97,7 +97,6 @@ function App() {
               <Route path="/product/:id" element={<ProductDetails />} exact />
               <Route path="/products-search" element={<SearchPage />} />
               {/* <Route path="/search/:keyword" element={<Home />} /> */}
-              {/* <Route path="/product/:id" element={<ProductDetails />} exact /> */}
 
               <Route path="/cart" element={<Cart />} exact />
               <Route path="/login" element={<Login />} />
@@ -293,10 +292,8 @@ function App() {
             location="bottom"
             cookieName="myAwesomeCookieName3" 
             expires={999} 
-            // buttonClasses="btn btn-primary"
             buttonStyle={{height: "40px", backgroundColor: "white", color: "#232f3e"}}
             containerClasses="alert bg-dark col-lg-12"
-            // contentClasses="text-capitalize"
             buttonText="Accepter"
             enableDeclineButton
             declineButtonText="Refuser"
