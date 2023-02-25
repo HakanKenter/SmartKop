@@ -7,7 +7,8 @@
     "start": "nodemon backend/server.js",
     "dev": "NODE_ENV=DEVELOPMENT nodemon backend/server",
     "prod": "NODE_ENV=PRODUCTION nodemon backend/server",
-    "seed": "node backend/utils/seeder.js"
+    "seed": "node backend/utils/seeder.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Hakan Kenter",
   "license": "ISC",
