@@ -22,27 +22,6 @@ const Product = ({ product, col }) => {
     }
 
     return (
-        // <div key={product._id} className={`col-sm-12 col-md-6 col-lg-${col} my-3`}>
-        //     <div className="card p-3 rounded">
-        //         <img
-        //             className="card-img-top mx-auto"
-        //             src={product.images[0].url}
-        //         />
-        //         <div className="card-body d-flex flex-column">
-        //             <h5 className="card-title">
-        //                 <Link to={`/product/${product._id}`}>{product.name}</Link>
-        //             </h5>
-        //             <div className="ratings mt-auto">
-        //                 <div className="rating-outer">
-        //                     <div className="rating-inner" style={{ width: `${(product.ratings / 5) * 100}%`}}></div>
-        //                 </div>
-        //                 <span id="no_of_reviews">({product.numOfReviews} Reviews)</span>
-        //             </div>
-        //             <p className="card-text">${product.price}</p>
-        //             <Link to={`/product/${product._id}`} id="view_btn" className="btn btn-block">View Details</Link>
-        //         </div>
-        //     </div>
-        // </div>
         <div 
             className={`col-lg-${col} col-md-6 col-sm-6`}
         >
@@ -70,7 +49,7 @@ const Product = ({ product, col }) => {
                     <div className="w-100 d-flex justify-content-between mb-4">
                         <span className="d-flex align-items-center stock-details" style={{ color: product.stock > 0 ? "#2bb04a" : "#e23a05" }}>{product.stock > 0 ? "En stock" : "Rupture"}</span>
                         <div className="ratings mt-auto">
-                            <small className="text-muted mx-2">({product.numOfReviews} Commentaires)</small>
+                            <small className="text-muted mx-2">{product.numOfReviews} Commentaire(s)</small>
                             <div className="rating-outer">
                                 <div className="rating-inner" style={{ width: `${(product.ratings / 5) * 100}%`}}></div>
                             </div>

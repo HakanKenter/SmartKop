@@ -189,7 +189,7 @@ const ProductDetails = () => {
                                                 </div>
                                             </article>
                                         </aside>
-                                        <main className="col-lg-6">
+                                        <main className="col-lg-6 right-side-product-details">
                                             <article className="ps-lg-3 pt-lg-0 pt-5">
                                                 <h4 className="title text-dark">{product.name}</h4>
                                                 <div className="rating-wrap my-3">
@@ -223,7 +223,7 @@ const ProductDetails = () => {
 
                                                 <div className="row mb-4">
 
-                                                    <div className="col-md-4 col-6 mb-3">
+                                                    <div className="col-md-4 col-12 mb-3">
                                                         <label className="form-label d-block mb-2">Quantité</label>
                                                         <div className="input-group input-spinner">
                                                             <button className="btn btn-icon btn-light" type="button">
@@ -277,7 +277,7 @@ const ProductDetails = () => {
                                                 <div className="tab-content">
                                                     <article id="tab_specs" className="tab-pane show active card-body">
                                                         <p>{product.description}</p>
-                                                        <p>Categorie: <strong>{product.category}</strong></p>
+                                                        <p>Catégorie: <strong>{product.category}</strong></p>
                                                     </article>
                                                     <article id="tab_warranty" className="tab-pane card-body">
                                                         <p>

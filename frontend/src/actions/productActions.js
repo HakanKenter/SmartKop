@@ -34,17 +34,17 @@ import {
     CLEAR_ERRORS
 } from '../constants/productConstants'
 
-// Get all Products
+/**
+ *  Get all Products
+ */ 
 export const getProducts = (keyword = '', currentPage = 1, price, category, ratings = 0) => async (dispatch) => {
     try {
         dispatch({ type: ALL_PRODUCTS_REQUEST })
 
-        // let link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[lte]=${price[1]}&price[gte]=${price[0]}&ratings[gte]=${ratings}&resPerPage=${resPerPage}`;
         let link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[lte]=${price[1]}&price[gte]=${price[0]}&ratings[gte]=${ratings}`;
 
         // This because category is only filter that isn't specified by default
         if (category) {
-            // link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[lte]=${price[1]}&price[gte]=${price[0]}&category=${category}&ratings[gte]=${ratings}&resPerPage=${resPerPage}`;
             link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[lte]=${price[1]}&price[gte]=${price[0]}&category=${category}&ratings[gte]=${ratings}`;
         }
 

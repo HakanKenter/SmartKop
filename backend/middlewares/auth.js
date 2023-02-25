@@ -32,7 +32,7 @@ exports.authorizeRoles = (...roles) => {
     return (req, res, next) => {
         if (!roles.includes(req.user.role)) {
             return next(
-                new ErrorHandler(`Le role (${req.user.role}) n'est pas autorisé à accéder à cette ressource.`, 403)
+                new ErrorHandler(`Le rôle (${req.user.role}) n'est pas autorisé à accéder à cette ressource.`, 403)
             )
         }
         next()

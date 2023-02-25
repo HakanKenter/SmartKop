@@ -35,7 +35,6 @@ const Cart = () => {
     }
 
     const checkoutHandler = () => {
-        // navigate('/login?redirect=shipping')
         navigate('/shipping')
     }
 
@@ -60,26 +59,15 @@ const Cart = () => {
                                             <img src={item.image} alt="Laptop" height="90" width="115" />
                                         </a>
 
-                                        <div className="item-in-cart col-5 col-lg-3">
+                                        <div className="item-in-cart title-item-cart col-5 col-lg-3">
                                             <a href={`/product/${item.product}`}>{item.name}</a>
                                         </div>
 
-
-                                        <div className="item-in-cart col-4 col-lg-2 mt-4 mt-lg-0">
+                                        <div className="item-in-cart col-12 col-lg-2 mt-4 mt-lg-0">
                                             <p id="card_item_price">{item.price}€</p>
                                         </div>
 
-                                        {/* <div className="item-in-cart col-4 col-lg-3 mt-4 mt-lg-0">
-                                            <div className="stockCounter d-inline">
-                                                <span className="btn btn-danger minus" onClick={() => decreaseQty(item.product, item.quantity)}>-</span>
-
-                                                <input type="number" className="form-control count d-inline" value={item.quantity} readOnly />
-
-                                                <span className="btn btn-primary plus" onClick={() => increaseQty(item.product, item.quantity, item.stock)}>+</span>
-                                            </div>
-                                        </div> */}
-
-                                        <div className="item-in-cart col-4 col-lg-3 mt-4 mt-lg-0">
+                                        <div className="item-in-cart col-6 col-lg-3 mt-4 mt-lg-0">
                                             <div className="stockCounter input-group input-spinner">
                                                 <button className="btn btn-icon btn-light" type="button">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#999" viewBox="0 0 24 24" onClick={() => decreaseQty(item.product, item.quantity)}>
@@ -95,7 +83,7 @@ const Cart = () => {
                                             </div>
                                         </div> 
 
-                                        <div className="item-in-cart col-4 col-lg-1 mt-4 mt-lg-0">
+                                        <div className="item-in-cart col-6 col-lg-1 mt-4 mt-lg-0">
                                             <i id="delete_cart_item" className="fa fa-trash btn btn-danger" onClick={() => removeCartItemHandler(item.product)}></i>
                                         </div>
 
@@ -112,7 +100,7 @@ const Cart = () => {
                             <div id="order_summary">
                                 <h4 className="f-20">Résumé de la commande</h4>
                                 <hr />
-                                <p>Sous-total:  <span className="order-summary-values">{cartItems.reduce((acc, item) => (acc + Number(item.quantity)), 0)} (Unitées)</span></p>
+                                <p>Sous-total:  <span className="order-summary-values">{cartItems.reduce((acc, item) => (acc + Number(item.quantity)), 0)} (Unités)</span></p>
                                 <p>Total: <span className="order-summary-values">{cartItems.reduce((acc, item) => acc + Number(item.quantity) * item.price, 0).toFixed(2)}€</span></p>
                 
                                 <hr />

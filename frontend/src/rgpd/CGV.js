@@ -110,7 +110,7 @@ const CGV = () => {
                 <h2 className="title-rights">10. Propriété intellectuelle</h2>
 
                 <p className="text-rights">
-                        Les marchandises vendues restent la propriété du vendeur jusqu'au complet règlement de leur prix. Toutefois les risques afférents aux marchandises seront transférés à l'acheteur ou au transporteur, dès la remise physique des produits.
+                    Les marchandises vendues restent la propriété du vendeur jusqu'au complet règlement de leur prix. Toutefois les risques afférents aux marchandises seront transférés à l'acheteur ou au transporteur, dès la remise physique des produits.
                 </p>
 
             </div>
@@ -120,17 +120,17 @@ const CGV = () => {
                 <h2 className="title-rights">11. Règlement des litiges</h2>
 
                 <p className="text-rights">
-                    Les présentes conditions générales de vente sont soumises au droit français. En cas de litige, les parties s'efforceront de trouver une solution amiable. A défaut, le litige sera soumis aux tribunaux compétents.
+                    Les présentes conditions générales de vente sont soumises au droit français. En cas de litige, les parties s'efforceront de trouver une solution amiable. À défaut, le litige sera soumis aux tribunaux compétents.
                 </p>
 
             </div>
 
             <div className="bloc-rights">
 
-                <h2 className="title-rights">12. Protection des données personnelles</h2>
+                <h2 className="title-rights">12. Protection des données personnelle</h2>
 
                 <p className="text-rights">
-                    Les données personnelles des clients sont collectées et traitées conformément à la réglementation en vigueur en matière de protection des données personnelles.
+                    Les données personnelles des clients sont collectées et traitées conformément à la réglementation en vigueur en matière de protection des données personnelle.
                 </p>
 
             </div>

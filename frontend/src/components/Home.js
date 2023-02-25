@@ -21,7 +21,6 @@ const Home = () => {
     const [price, setPrice] = useState([1, 1000])
     const [category, setCategory] = useState('')
     const [rating, setRating] = useState(0)
-    // const [numberPerPage, setnumberPerPage] = useState(4)
 
     const categories = [
         "Générale",

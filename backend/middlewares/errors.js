@@ -33,7 +33,7 @@ module.exports = (err, req, res, next) => {
 
         // Handling Mongoose duplicate key errors (11000 code error)
         if(err.code === 11000) {
-            const message = `Entrée ${Object.keys(err.keyValue)} duppliquée.`;
+            const message = `${Object.keys(err.keyValue)} déjà enregisté.`;
             error = new ErrorHandler(message, 400)
         }
 
@@ -45,7 +45,7 @@ module.exports = (err, req, res, next) => {
 
         // Handling Expired JWT error
         if (err.name === 'TokenExpiredError') {
-            const message = 'Votre JSON Web Token à expiré. Réessayer !';
+            const message = 'Votre JSON Web Token a expiré. Réessayer !';
             error = new ErrorHandler(message, 400)
         }
 

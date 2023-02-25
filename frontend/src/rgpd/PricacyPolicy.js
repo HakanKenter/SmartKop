@@ -28,7 +28,7 @@ const PricacyPolicy = () => {
 
                 <p className="text-rights">
                     Nous collectons des informations sur vous lorsque vous effectuez un achat ou créez un compte sur notre site. Les informations collectées peuvent inclure votre nom, adresse électronique, adresse postale et votre photo de profil. 
-                    Nous utilisons également des technologies telles que les cookies pour l'utilisation de notre site.
+                    Nous utilisons également des technologies tels que les cookies pour l'utilisation de notre site.
                 </p>
 
             </div>

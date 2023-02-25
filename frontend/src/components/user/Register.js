@@ -134,19 +134,6 @@ const Register = () => {
                                     />
                                 </figure>
                             </div>
-                            {/* <div className='custom-file'>
-                                <input
-                                    type='file'
-                                    name='avatar'
-                                    className='custom-file-input'
-                                    id='customFile'
-                                    accept="images/*"
-                                    onChange={onChange}
-                                />
-                                <label className='custom-file-label' htmlFor='customFile'>
-                                    Choisir une image
-                                </label>
-                            </div> */}
 
                             <div className='custom-file'>
                                 <input

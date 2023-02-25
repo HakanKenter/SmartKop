@@ -52,7 +52,6 @@ exports.newProduct = catchAsyncErrors(async (req, res, next) => {
 exports.getProducts = catchAsyncErrors (async (req, res, next) => {
 
     const resPerPage = 6;
-    // const resPerPage = Number(req.query.resPerPage);
     const productsCount = await Product.countDocuments();
 
     if (req.query.resPerPage) {
@@ -165,7 +164,6 @@ exports.updateProduct = catchAsyncErrors (async (req, res, next) => {
         
         req.body.images = imagesLinks
     }
-
 
 
     product = await Product.findByIdAndUpdate(req.params.id, req.body, {

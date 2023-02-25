@@ -3,39 +3,29 @@ import { Link } from 'react-router-dom'
 
 const CheckoutSteps = ({ shipping, confirmOrder, payment}) => {
     return (
-        <div className="checkout-progress d-flex justify-content-center mt-5">
+        // <div className="col-12">
+            <div className="checkout-progress mt-5">
 
             {shipping ? <Link to='/shipping' className="float-right">
-                {/* <div className="triangle2-active"></div> */}
                 <div className="step active-step">Expédition</div>
-                {/* <div className="triangle-active"></div> */}
             </Link> : <Link to="#!" disabled>
-                    {/* <div className="triangle2-incomplete"></div> */}
                     <div className="step incomplete">Expédition</div>
-                    {/* <div className="triangle-incomplete"></div> */}
                 </Link>}
 
             {confirmOrder ? <Link to='/confirm' className="float-right">
-                {/* <div className="triangle2-active"></div> */}
-                <div className="center-step step active-step">Confirmation Commande</div>
-                {/* <div className="triangle-active"></div> */}
+                <div className="center-step step active-step">Confirmation commande</div>
             </Link> : <Link to="#!" disabled>
-                    {/* <div className="triangle2-incomplete"></div> */}
-                    <div className="step incomplete">Confirmation Commande</div>
-                    {/* <div className="triangle-incomplete"></div> */}
+                    <div className="step incomplete">Confirmation commande</div>
                 </Link>}
 
             {payment ? <Link to='/payment' className="float-right">
-                {/* <div className="triangle2-active"></div> */}
                 <div className="step active-step">Paiement</div>
-                {/* <div className="triangle-active"></div> */}
             </Link> : <Link to="#!" disabled>
-                    {/* <div className="triangle2-incomplete"></div> */}
                     <div className="step incomplete">Paiement</div>
-                    {/* <div className="triangle-incomplete"></div> */}
                 </Link>}
-
-        </div>
+            </div>
+        // </div>
+        
 
     )
 }

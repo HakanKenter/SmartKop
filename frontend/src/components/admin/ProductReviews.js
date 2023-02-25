@@ -109,7 +109,7 @@ const ProductReviews = () => {
                 <div className="w-100 ml-4">
                     <Fragment>
                         <div className="row justify-content-center mt-5">
-                            <div className="col-5">
+                            <div className="id-product-search">
                                 <form onSubmit={submitHandler}>
                                     <div className="form-group">
                                         <label htmlFor="productId_field">Entrez un ID de produit</label>

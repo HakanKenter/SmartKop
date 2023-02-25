@@ -80,7 +80,7 @@ const ProcessOrder = () => {
 
                                     <hr />
 
-                                    <h4 className="my-4 f-20">Paiment</h4>
+                                    <h4 className="my-4 f-20">Paiement</h4>
                                     <p className={isPaid ? "greenColor" : "redColor"}><b>{isPaid ? "PAYÉ" : "NON PAYÉ"}</b></p>
 
                                     <hr />

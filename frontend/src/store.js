@@ -49,7 +49,7 @@ const reducer = combineReducers({
     newReview: newReviewReducer
 })
 
-// After save cartItem in local storage, i initialize state with getting local storage item 
+// After save cartItem in local storage, I initialize state with getting local storage item 
 // to have access to my cartItem
 let initialState = {
     cart: {

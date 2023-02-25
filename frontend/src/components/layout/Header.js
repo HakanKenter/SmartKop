@@ -33,7 +33,6 @@ const Header2 = () => {
 
 
     const logoutHandler = (e) => {
-        // e.preventDefault();
 
         if (cartItems) {
 
@@ -84,7 +83,6 @@ const Header2 = () => {
                                                     style={{ height: "39px"}}
                                                 />
                                             </figure>
-                                            {/* <span>{user && user.name}</span> */}
                                         </Dropdown.Toggle>
 
                                         <Dropdown.Menu>
@@ -92,7 +90,7 @@ const Header2 = () => {
                                             {user && user.role === 'admin' && (
                                                 <Link className="dropdown-item" to="/dashboard">Tableau de bord</Link>
                                             )}
-                                            <Link className="dropdown-item" to="/orders/me">Commande</Link>
+                                            <Link className="dropdown-item" to="/orders/me">Commandes</Link>
                                             <Link className="dropdown-item" to="/me">Profil</Link>
                                             <Link className="dropdown-item text-danger" to="/" onClick={logoutHandler}>Déconnexion</Link>
                                         </Dropdown.Menu>
@@ -100,7 +98,6 @@ const Header2 = () => {
                                     
 
                                 ): !loading && 
-                                    // <Link to="/login" className="btn ml-4" id="login_btn">Login</Link> 
                                     <Link to="/login" className="btn btn-light">
                                         <i className="fa fa-user"></i>  <span className="ms-1 d-none d-sm-inline-block">Connexion  </span>
                                     </Link>
@@ -133,7 +130,7 @@ const Header2 = () => {
                                     <a className="nav-link ps-0" href="#category-nav-block-recommended"> Recommandé </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#best-seller">Meilleurs notes</a>
+                                    <a className="nav-link" href="#best-seller">Meilleures notes</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to={`/products-search?search=carte`}>Carte graphique</Link>
@@ -142,7 +139,7 @@ const Header2 = () => {
                                     <Link className="nav-link" to={`/products-search?search=macbook`}>Ordinateur</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to={`/products-search?search=cable`}>Cable</Link>
+                                    <Link className="nav-link" to={`/products-search?search=cable`}>Câble</Link>
                                 </li>
                             </ul>
                         </div>

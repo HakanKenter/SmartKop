@@ -109,7 +109,7 @@ const NewProduct = () => {
                 <div className="w-100 ml-4">
                     <Fragment>
                         <div className="wrapper my-5">
-                            <form className="shadow-lg" style={{minWidth: "600px"}} onSubmit={submitHandler} encType='multipart/form-data'>
+                            <form className="shadow-lg form-admin-style" onSubmit={submitHandler} encType='multipart/form-data'>
                                 <h1 className="mb-4 f-24">Nouveau Produit</h1>
 
                                 <div className="form-group">
@@ -173,20 +173,6 @@ const NewProduct = () => {
                                 <div className='form-group'>
                                     <label>Images</label>
 
-                                    {/* <div className='custom-file'>
-                                        <input
-                                            type='file'
-                                            name='product_images'
-                                            className='custom-file-input'
-                                            id='customFile'
-                                            onChange={onChange}
-                                            multiple
-                                        />
-                                        <label className='custom-file-label' htmlFor='customFile'>
-                                            Choisir images
-                                     </label>
-                                    </div> */}
-
                                     <div className='custom-file'>
                                         <input
                                             type='file'
@@ -213,7 +199,6 @@ const NewProduct = () => {
                                     id="login_button"
                                     type="submit"
                                     className="btn btn-block py-3"
-                                    // disabled={loading ? true : false}
                                 >
                                     Ajouter
                                 </button>

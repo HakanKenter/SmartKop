@@ -53,7 +53,7 @@ const productsSchema = new mongoose.Schema({
                 "Tablette",
                 "Smartphone"
             ],
-            message: 'Veuillez séléctionner une catégorie correcte.'
+            message: 'Veuillez sélectionner une catégorie correcte.'
         }
     },
     seller: {

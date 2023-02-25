@@ -39,10 +39,10 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
     <div>
         Bienvenue chez SmartKop !<br><br>
 
-        Cette email confirme votre inscription.<br>
+        Cet email confirme votre inscription.<br>
         Vous pouvez retourner sur le site en cliquant sur ici <a href="${process.env.FRONTEND_URL}">SmartKop<a/>.<br><br><br>
 
-        À très bien tôt !<br>
+        À très bientôt !<br>
         L'équipe SmartKop
     </div>
     `
@@ -124,10 +124,10 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
     <h3>Demande de réinitialisation.</h3>
 
     <div>
-        Vous pouvez réinitialiser votre mot de passe en cliquant: <a href="${resetUrl}">Ici</a><br>
+        Vous pouvez réinitialiser votre mot de passe en cliquant : <a href="${resetUrl}">Ici</a><br>
         Si vous n'êtes pas à l'origine de cette demande vous pouvez l'ignorer.<br><br>
         
-        À très bien tôt !<br>
+        À très bientôt !<br>
         L'équipe SmartKop
     </div>
     `
@@ -142,7 +142,7 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
 
         res.status(200).json({
             success: true,
-            message: `Email envoyé à: ${user.email}`
+            message: `Email envoyé à : ${user.email}`
         })
         
     } catch (error) {
@@ -175,7 +175,7 @@ exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
 
     // compare with resetPasswordToken of the database
     if(req.body.password !== req.body.confirmPassword) {
-        return next(new ErrorHandler('Les mot de passe ne correspondent pas.', 400))
+        return next(new ErrorHandler('Les mots de passe ne correspondent pas.', 400))
     }
 
     // Setup new password
@@ -333,7 +333,7 @@ exports.getUserDetails = catchAsyncErrors(async (req, res, next) => {
     const user = await User.findById(req.params.id);
 
     if(!user) {
-        return next(new ErrorHandler(`Utilisateur avec l'id: ${req.params.id} non trouvé.`, 404))
+        return next(new ErrorHandler(`Utilisateur avec l'id : ${req.params.id} non trouvé.`, 404))
     }
 
     res.status(200).json({
@@ -373,7 +373,7 @@ exports.deleteUser = catchAsyncErrors(async (req, res, next) => {
     const user = await User.findById(req.params.id);
 
     if(!user) {
-        return next(new ErrorHandler(`Utilisateur avec l'id: ${req.params.id} non trouvé.`, 404))
+        return next(new ErrorHandler(`Utilisateur avec l'id : ${req.params.id} non trouvé.`, 404))
     }
 
     // Remove avatar from cloudinary

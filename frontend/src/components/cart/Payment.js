@@ -116,23 +116,6 @@ const Payment = () => {
                     dispatch(removeAllItemFromCart());
                     dispatch(createOrder(order));
 
-                    
-                    
-                    console.log("test")
-                    // const formData = new FormData();
-                    // formData.set('name', name);
-                    // formData.set('price', price);
-                    // formData.set('description', description);
-                    // formData.set('category', category);
-                    // formData.set('stock', stock);
-                    // formData.set('seller', seller);
-
-                    // images.forEach(image => {
-                    //     formData.append('images[]', image)
-                    // })
-
-                    // dispatch(updateProduct(product._id, formData))
-
                     await order.orderItems.forEach(product => {
                         const formData = new FormData();
                         formData.set('stock', (product.stock - product.quantity));	
@@ -144,7 +127,7 @@ const Payment = () => {
 
                     navigate('/success')
                 } else {
-                    alert.error('Il y a un problème avec le traiement du paiement.')
+                    alert.error('Il y a un problème avec le traitement du paiement.')
                 }
             }
 

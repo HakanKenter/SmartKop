@@ -15,7 +15,7 @@ const Sidebar = () => {
                             className="fa fa-product-hunt"></i> Produits</a>
                         <ul className="collapse list-unstyled" id="productSubmenu">
                             <li>
-                                <Link to="/admin/products"><i className="fa fa-clipboard"></i> Tout les produits</Link>
+                                <Link to="/admin/products"><i className="fa fa-clipboard"></i> Tous les produits</Link>
                             </li>
 
                             <li>

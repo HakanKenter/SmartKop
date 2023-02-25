@@ -12,8 +12,7 @@ const Landing = () => {
     const [currentPage, setCurrentPage] = useState(1)
     const [price, setPrice] = useState([1, 1000])
     const [category, setCategory] = useState('')
-    const [rating, setRating] = useState(0)
-    // const [numberPerPage, setnumberPerPage] = useState(0)   
+    const [rating, setRating] = useState(0) 
 
     const alert = useAlert();
     const dispatch = useDispatch();
@@ -30,10 +29,6 @@ const Landing = () => {
             return alert.error(error)
         }
         
-
-        // if(keyword) {
-        //     setCurrentPage(1);
-        // }
         dispatch(getAllProducts());
 
     }, [dispatch, alert, error])
@@ -73,8 +68,8 @@ const Landing = () => {
                                     <main className="col-lg-9">
                                         <article className="card-banner p-5 " style={{ height: "350px", background: "#232f3e" }}>
                                             <div style={{ maxWidth: "500px" }}>
-                                                <h2 className="text-white">Les meilleurs produits<br /> pour les meilleurs affaires </h2>
-                                                <p className="text-white">Smartkop vous offre une large gamme de produit électroniques.</p>
+                                                <h2 className="text-white">Les meilleurs produits<br /> pour les meilleures affaires </h2>
+                                                <p className="text-white">Smartkop vous offre une large gamme de produits électroniques.</p>
                                                 <Link to="/products-search" className="btn btn-warning border-0"> Voir </Link>
                                             </div>
                                         </article>
@@ -83,7 +78,7 @@ const Landing = () => {
                                         <article className="card-banner h-100" style={{ background: "#fa9c23" }}>
                                             <div className="card-body text-center">
                                                 <h5 className="mt-3 text-white">Très bonnes affaires !</h5>
-                                                <p className="text-white">Peut importe la catégorie de produit, vous trouverez des prix défiant toutes concurrences.</p>
+                                                <p className="text-white">Peu importe la catégorie de produits, vous trouverez des prix défiant toutes concurrences.</p>
                                                 <Link to="/products-search" className="btn btn-outline-light"> Voir </Link>
                                             </div>
                                         </article>

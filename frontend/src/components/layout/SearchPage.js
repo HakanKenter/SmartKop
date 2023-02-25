@@ -21,7 +21,6 @@ const SearchPage = () => {
     const [price, setPrice] = useState([1, 1000])
     const [category, setCategory] = useState('')
     const [rating, setRating] = useState(0)
-    // const [numberPerPage, setnumberPerPage] = useState(4)
     const numberOfResultsPerPage = 6;  
 
     const categories = [
@@ -50,11 +49,7 @@ const SearchPage = () => {
 
     const { loading, products, error, productsCount, resPerPage, filteredProductsCount } = useSelector(state => state.products)
 
-    // let keyword = params.keyword
-
-    // let keyword = 
     let keyword = location.search && location.search.split('=')[1]
-    // let searchedCategory = location.search && location.search.split('?')[1].split('=')[0] === 'category' && location.search.split('?')[1].split('=')[1]
     let pagination;
 
     useEffect(() => {
@@ -70,7 +65,6 @@ const SearchPage = () => {
     const handleCategory = (category) => {
         setCategory(category)
         setCurrentPage(1)
-        // keyword = '';
         
         if(category === 'Générale') {
             setCategory('');
@@ -79,7 +73,6 @@ const SearchPage = () => {
         }
         
         navigate('/products-search')
-        // dispatch(getProducts(keyword, currentPage, price, category, rating));
     }
 
     const handlePrice = (price) => {
@@ -260,7 +253,6 @@ const SearchPage = () => {
 
                                         <hr />
 
-                                        {/* {resPerPage <= count && ( */}
                                         {pagination > 1 && (
 
                                             <div className="pagination-block d-flex justify-content-center mt-5 mb-5 col-12 mx-auto">
@@ -280,7 +272,6 @@ const SearchPage = () => {
                                             </div>
                                             
                                         )}
-                                        {/* )} */}
 
                                     </main>
                                 </div>

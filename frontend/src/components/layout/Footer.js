@@ -28,7 +28,7 @@ const Footer2 = () => {
                                         <a href="#category-nav-block-recommended"> Recommandé </a>
                                     </li>
                                     <li>
-                                        <a href="#best-seller">Meilleurs notes</a>
+                                        <a href="#best-seller">Meilleures notes</a>
                                     </li>
                                     <li>
                                         <Link to={`/products-search?search=carte`}>Carte graphique</Link>
@@ -37,7 +37,7 @@ const Footer2 = () => {
                                         <Link to={`/products-search?search=macbook`}>Ordinateur</Link>
                                     </li>
                                     <li>
-                                        <Link to={`/products-search?search=cable`}>Cable</Link>
+                                        <Link to={`/products-search?search=cable`}>Câble</Link>
                                     </li>
                                 </ul>
                             </aside>

@@ -34,17 +34,17 @@ exports.newOrder = catchAsyncErrors(async (req, res, next) => {
     <div>
         Nous confirmons le paiement de votre commande !<br><br>
 
-        Voici vos articles: <br><br>
+        Voici vos articles : <br><br>
         <p style="color: blue">
         ${allItems.join(', ')}
         </p><br>
 
-        Livraison prévu à l'adresse suivante: 
+        Livraison prévue à l'adresse suivante : 
         <span style="color: blue">${shippingInfo.address + ', ' + shippingInfo.city + ' ' + shippingInfo.postalCode + ', ' + shippingInfo.country}</span><br><br>
 
         Vous pouvez retourner sur le site en cliquant sur ici <a href="${process.env.FRONTEND_URL}">SmartKop<a/>.<br><br><br>
 
-        À très bien tôt !<br>
+        À très bientôt !<br>
         L'équipe SmartKop
     </div>
     `
@@ -82,7 +82,7 @@ exports.getSingleOrder = catchAsyncErrors( async(req, res, next) => {
     const order = await Order.findById(req.params.id).populate('user', 'name email');
 
     if(!order) {
-        return next(new ErrorHandler('Aucune de commande trouvée avec cet ID.', 404));
+        return next(new ErrorHandler('Aucune commande trouvée avec cet ID.', 404));
     }
 
     res.status(200).json({
@@ -128,7 +128,7 @@ exports.updateOrder = catchAsyncErrors( async(req, res, next) => {
     const order = await Order.findById(req.params.id);
 
     if(order.orderStatus === 'Livre') {
-        return next(new ErrorHandler('Vous avez déjà livrée cette commande', 400));
+        return next(new ErrorHandler('Vous avez déjà livré cette commande', 400));
     }
 
     order.orderItems.forEach(async item => {
