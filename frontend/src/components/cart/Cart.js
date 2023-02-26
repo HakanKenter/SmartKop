@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addItemToCart, removeItemFromCart } from '../../actions/cartActions';
 
 const Cart = () => {
-
+    
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
